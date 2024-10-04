@@ -59,3 +59,27 @@ article {
 .image img{
     width: 200px;
 }
+#VPI{
+    display: none;
+}
+
+@media print {
+
+    .pub{
+        display: none;
+    }
+    #main_container{
+        
+
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "article"
+        "image";
+    }
+    #VPI{
+        display: block;
+    }
+        
+
+}
